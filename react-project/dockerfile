@@ -1,0 +1,36 @@
+
+# 阶段一  依赖构建
+FROM node:20-alpine AS dependencies
+
+WORKDIR /app
+
+COPY package*.json ./
+COPY pnpm-lock.yaml ./
+
+RUN npm install -g pnpm
+
+RUN pnpm install
+
+# 阶段二  前端页面应用构建
+FROM dependencies AS build
+
+WORKDIR /app
+
+COPY . .
+
+RUN ls -al /app/node_modules/vite/
+
+RUN pnpm build
+
+# 阶段三 生产阶段部署
+FROM node:14-alpine
+
+WORKDIR /app
+
+COPY --from=build /app/dist ./dist
+COPY --from=build /app/node_modules ./node_modules
+COPY --from=build /app/package*.json ./
+
+EXPOSE 80
+
+CMD ["pm2", "start", "dist/main.js", "--name", "react-project"]

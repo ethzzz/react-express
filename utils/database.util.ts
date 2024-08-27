@@ -1,0 +1,1 @@
+export const nestAdmin = (global as any).ms.db.mysql['nest_admin']

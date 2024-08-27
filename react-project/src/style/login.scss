@@ -1,0 +1,17 @@
+.login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    .captcha-area{
+        display: flex;
+        align-items: center;
+        .captcha{
+            cursor: pointer;
+            // flex:;
+            flex:1;
+            height:100%;
+        }
+    }
+}
