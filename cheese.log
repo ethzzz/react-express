@@ -7036,3 +7036,41 @@
   remark: 'test',
   nickname: 'nickname'
 }
+[2024-08-27T15:19:33.383] [INFO] framework/db_base - mysql connect success
+[2024-08-27T15:19:34.435] [INFO] default - 	route: post /system/login modules/system login
+[2024-08-27T15:19:34.435] [INFO] default - 	route: post /system/getCaptcha modules/system getCaptcha
+[2024-08-27T15:19:34.436] [INFO] default - 	route: post /system/verifyToken modules/system verifyToken
+[2024-08-27T15:19:34.436] [INFO] default - 	route: post /system/register modules/system register
+[2024-08-27T15:19:34.518] [INFO] default - 	route: get /user/key/:key modules/users getKey
+[2024-08-27T15:19:34.519] [INFO] default - 	route: post /user/key modules/users setKey
+[2024-08-27T15:19:34.520] [INFO] default - 	route: post /user/getUserInfo modules/users getUserInfo
+[2024-08-27T15:19:34.577] [INFO] default - 	route: get /stream/getFile modules/stream getFile
+[2024-08-27T15:19:34.577] [INFO] default - 	route: post /stream/getFileStream/:name modules/stream getFileStream
+[2024-08-27T15:19:34.642] [INFO] default - 	route: get /redis/key/:key modules/redis getKey
+[2024-08-27T15:19:34.702] [INFO] default - 	route: post /socket/create modules/socket create
+[2024-08-27T15:19:34.773] [INFO] default - 	route: post /upload/uploadFile modules/upload uploadFile
+[2024-08-27T15:19:34.850] [INFO] utils/rabbitmq - RabbitMQ getConnection....
+[2024-08-27T15:19:34.859] [INFO] default - 	route: post /rabbitmq/send modules/rabbitmq send
+[2024-08-27T15:19:34.865] [INFO] redis/conn - redisCache connection succeed
+[2024-08-27T15:19:34.869] [INFO] common/websocket - websocketServer is running on port 3001
+[2024-08-27T15:19:34.869] [INFO] default - app listen 3000
+[2024-08-27T15:19:34.883] [INFO] utils/rabbitmq - RabbitMQ getConnection success
+[2024-08-27T15:21:18.139] [INFO] framework/db_base - mysql connect success
+[2024-08-27T15:21:19.186] [INFO] default - 	route: post /system/login modules/system login
+[2024-08-27T15:21:19.187] [INFO] default - 	route: post /system/getCaptcha modules/system getCaptcha
+[2024-08-27T15:21:19.188] [INFO] default - 	route: post /system/verifyToken modules/system verifyToken
+[2024-08-27T15:21:19.189] [INFO] default - 	route: post /system/register modules/system register
+[2024-08-27T15:21:19.270] [INFO] default - 	route: get /user/key/:key modules/users getKey
+[2024-08-27T15:21:19.270] [INFO] default - 	route: post /user/key modules/users setKey
+[2024-08-27T15:21:19.271] [INFO] default - 	route: post /user/getUserInfo modules/users getUserInfo
+[2024-08-27T15:21:19.335] [INFO] default - 	route: get /stream/getFile modules/stream getFile
+[2024-08-27T15:21:19.336] [INFO] default - 	route: post /stream/getFileStream/:name modules/stream getFileStream
+[2024-08-27T15:21:19.401] [INFO] default - 	route: get /redis/key/:key modules/redis getKey
+[2024-08-27T15:21:19.460] [INFO] default - 	route: post /socket/create modules/socket create
+[2024-08-27T15:21:19.526] [INFO] default - 	route: post /upload/uploadFile modules/upload uploadFile
+[2024-08-27T15:21:19.599] [INFO] utils/rabbitmq - RabbitMQ getConnection....
+[2024-08-27T15:21:19.604] [INFO] default - 	route: post /rabbitmq/send modules/rabbitmq send
+[2024-08-27T15:21:19.612] [INFO] redis/conn - redisCache connection succeed
+[2024-08-27T15:21:19.615] [INFO] common/websocket - websocketServer is running on port 3001
+[2024-08-27T15:21:19.616] [INFO] default - app listen 3000
+[2024-08-27T15:21:19.624] [INFO] utils/rabbitmq - RabbitMQ getConnection success
